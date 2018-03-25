@@ -111,7 +111,7 @@ public class home extends AppCompatActivity {
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
 
-        mStorage = FirebaseStorage.getInstance().getReference();
+        mStorage = FirebaseStorage.getInstance("gs://symmetrical-saww-pancake.appspot.com/menus").getReference();
         mProgress = new ProgressDialog(this);
 
 
